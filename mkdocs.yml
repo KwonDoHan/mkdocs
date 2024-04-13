@@ -1,0 +1,61 @@
+# Project information
+site_name: Dev Notes by HAN
+site_url: http://localhost:8000
+docs_dir: 'docs'
+# site_dir: 'static'
+
+nav:
+- Home: index.md
+
+# Theme
+theme:
+  name: material
+  font:
+    text: Roboto
+    code: D2Coding
+  icon:
+    logo: material/library
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.expand
+  palette:
+    scheme: default
+    primary: blue
+    accent: blue
+
+# Plugins
+plugins:
+  - search
+
+markdown_extensions:
+    - footnotes
+    - admonition
+    - codehilite:
+        guess_lang: false
+    - def_list
+    - meta
+    - toc:
+        permalink: true
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.tilde
+    - pymdownx.critic
+    - pymdownx.smartsymbols
+    - pymdownx.keys
+    - pymdownx.details
+    - pymdownx.highlight
+    - pymdownx.betterem:
+        smart_enable: all
+    - pymdownx.superfences:
+        preserve_tabs: true
+        custom_fences:
+            - name: flow
+              class: uml-flowchart
+              format: !!python/name:pymdownx.superfences.fence_code_format
+            - name: sequence
+              class: uml-sequence-diagram
+              format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_css:
+   - css/custom.css

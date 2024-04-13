@@ -1,0 +1,21 @@
+ARTICLE.md-content__inner {
+  font-size: 11pt;
+}
+
+DIV.uml-flowchart, DIV.uml-sequence-diagram {
+  text-align: center;
+}
+
+.uml-flowchart text, .uml-sequence-diagram text {
+  font-family: D2Coding !important;
+  font-size: 10pt !important;
+}
+
+.uml-flowchart rect, .uml-sequence-diagram rect,
+.uml-flowchart path, .uml-sequence-diagram path {
+  stroke-width: 1.5px;
+}
+
+.uml-flowchart path {
+  /* marker-end: url(#raphael-marker-endblock55); */
+}
