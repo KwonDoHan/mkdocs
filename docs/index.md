@@ -2,10 +2,3 @@
 
 ??? warning
     Markdown(\*.md) 파일을 저장할 때 반드시 UTF-8 문자셋을 사용해야 합니다.
-    
-??? info "문서 변경이력 정보"
-    문서를 추가/변경하고 SVN Commit할 때 본 문서(`docs/index.md`)의 `History` 부분에 변경 이력을 기록해 주십시오.
-
-## History
-
-??? quote "2024-04-12 최초 문서 작성 시작"

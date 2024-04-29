@@ -7,17 +7,38 @@ repo_name: mkdocs
 repo_url: https://github.com/dohankwon/mkdocs
 
 edit_uri: edit/master/docs
-docs_dir: 'docs'
+docs_dir: "docs"
 # site_dir: 'static'
 
 nav:
-- Home: index.md
+  - Home: index.md
+  - macOS:
+      - Home: "macos/index.md"
+      - Apps:
+          - Visual Studio Code: "macos/vscode.md"
+  - Linux:
+      - Home: "linux/index.md"
+  - Windows:
+      - Home: "windows/index.md"
+      - Tips: "windows/tips.md"
+  - Git:
+      - Home: "git/index.md"
+      - GitHub:
+          - About: "git/github/index.md"
+          - Actions: "git/github/actions.md"
+  - ETC:
+      - Home: "etc/index.md"
+      - MkDocs: "etc/mkdocs.md"
+      - Material for MkDocs: "etc/material4mkdocs.md"
+  - Security:
+      - Glossary: 'security/glossary.md'
 
 # Theme
 theme:
   name: material
+  language: ko
   font:
-    text: Roboto
+    text: Nanum Gothic
     code: D2Coding
   icon:
     logo: material/library
@@ -25,10 +46,25 @@ theme:
     - navigation.tabs
     - navigation.instant
     - navigation.expand
-  palette:
-    scheme: default
-    primary: blue
-    accent: blue
+    - search.suggest
+    - search.highlight
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  # palette:
+    # scheme: default
+    # primary: blue
+    # accent: blue
+  icon:
+    repo: fontawesome/brands/github
 
 # Plugins
 plugins:
@@ -73,4 +109,3 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
-
