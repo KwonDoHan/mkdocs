@@ -1,9 +1,9 @@
 # MkDocs
 
-우리회사 내 문서는 MkDocs를 이용해서 작성하고 변경이력은 [SVN](../Divisions/BusinessSupportSystems.md#svn)을 이용한다.
+개발노트를 위해서 MkDocs를 이용하고, 변경이력은 [Git]()을 사용한다. Git 저장소(respository)는 GitHub를 이용하고, GitHub Action을 통해 GitHub Pages로 Deploy한다.
 
 변경된 내용을 등록하기 전에 로컬PC에서 내용을 확인하기 위해 각자 MkDocs를 설치/실행해야 한다.
-이를 위해 본 문서를 통해 MkDocs의 설치/사용방법을 알아보자.
+이를 위해 본 문서를 통해 MkDocs의 설치 및 사용방법을 알아보자.
 
 ## MkDocs 설치
 

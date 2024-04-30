@@ -31,7 +31,9 @@ nav:
       - MkDocs: "etc/mkdocs.md"
       - Material for MkDocs: "etc/material4mkdocs.md"
   - Security:
-      - Glossary: 'security/glossary.md'
+      - Glossary: "security/glossary.md"
+  - Language:
+      - Python: "language/python.md"
 
 # Theme
 theme:
@@ -40,15 +42,15 @@ theme:
   font:
     text: Nanum Gothic
     code: D2Coding
-  icon:
-    logo: material/library
+  # icon:
+  #   logo: material/library
   features:
     - navigation.tabs
     - navigation.instant
     - navigation.expand
     - search.suggest
     - search.highlight
-  palette: 
+  palette:
     # Palette toggle for light mode
     - scheme: default
       toggle:
@@ -60,9 +62,9 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
   # palette:
-    # scheme: default
-    # primary: blue
-    # accent: blue
+  # scheme: default
+  # primary: blue
+  # accent: blue
   icon:
     repo: fontawesome/brands/github
 
