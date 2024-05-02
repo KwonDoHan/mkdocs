@@ -11,103 +11,107 @@ docs_dir: "docs"
 # site_dir: 'static'
 
 nav:
-  - Home: index.md
-  - macOS:
-      - Home: "macos/index.md"
-      - Apps:
-          - Visual Studio Code: "macos/vscode.md"
-  - Linux:
-      - Home: "linux/index.md"
-  - Windows:
-      - Home: "windows/index.md"
-      - Tips: "windows/tips.md"
-  - Git:
-      - Home: "git/index.md"
-      - GitHub:
-          - About: "git/github/index.md"
-          - Actions: "git/github/actions.md"
-  - ETC:
-      - Home: "etc/index.md"
-      - MkDocs: "etc/mkdocs.md"
-      - Material for MkDocs: "etc/material4mkdocs.md"
-  - Security:
-      - Glossary: "security/glossary.md"
-  - Language:
-      - Python: "language/python.md"
+    - Home: index.md
+    - macOS:
+          - Home: "macos/index.md"
+          - Apps:
+                - Visual Studio Code: "macos/vscode.md"
+    - Linux:
+          - Home: "linux/index.md"
+    - Windows:
+          - Home: "windows/index.md"
+          - Tips: "windows/tips.md"
+    - Git:
+          - Home: "git/index.md"
+          - GitHub:
+                - About: "git/github/index.md"
+                - Actions: "git/github/actions.md"
+    - ETC:
+          - Home: "etc/index.md"
+          - MkDocs: "etc/mkdocs.md"
+          - Material for MkDocs: "etc/material4mkdocs.md"
+    - Security:
+          - Glossary: "security/glossary.md"
+    - Languages:
+          - Python: "languages/python.md"
+          - Go: "languages/go.md"
+    - SBOM:
+          - About: "sbom/index.md"
+          - Supported Languages, File Formats, etc.: "sbom/supported.md"
 
 # Theme
 theme:
-  name: material
-  language: ko
-  font:
-    text: Nanum Gothic
-    code: D2Coding
-  # icon:
-  #   logo: material/library
-  features:
-    - navigation.tabs
-    - navigation.instant
-    - navigation.expand
-    - search.suggest
-    - search.highlight
-  palette:
-    # Palette toggle for light mode
-    - scheme: default
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
-    # Palette toggle for dark mode
-    - scheme: slate
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
-  # palette:
-  # scheme: default
-  # primary: blue
-  # accent: blue
-  icon:
-    repo: fontawesome/brands/github
+    name: material
+    language: ko
+    font:
+        text: Nanum Gothic
+        code: D2Coding
+    # icon:
+    #   logo: material/library
+    features:
+        - navigation.tabs
+        - navigation.instant
+        - navigation.expand
+        - search.suggest
+        - search.highlight
+    palette:
+        # Palette toggle for light mode
+        - scheme: default
+          toggle:
+              icon: material/weather-night
+              name: Switch to dark mode
+        # Palette toggle for dark mode
+        - scheme: slate
+          toggle:
+              icon: material/weather-sunny
+              name: Switch to light mode
+    # palette:
+    # scheme: default
+    # primary: blue
+    # accent: blue
+    icon:
+        repo: fontawesome/brands/github
 
 # Plugins
 plugins:
-  - search
+    - search
 
 extra_css:
-  - css/custom.css
+    - css/custom.css
 
 # Extensions
 markdown_extensions:
-  - abbr
-  - admonition
-  - attr_list
-  - def_list
-  - footnotes
-  - meta
-  - toc:
-      permalink: true
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
-  - pymdownx.critic
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.snippets:
-      check_paths: true
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
+    - abbr
+    - admonition
+    - attr_list
+    - def_list
+    - footnotes
+    - meta
+    - toc:
+          permalink: true
+    - pymdownx.arithmatex:
+          generic: true
+    - pymdownx.betterem:
+          smart_enable: all
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.emoji:
+          emoji_index: !!python/name:materialx.emoji.twemoji
+          emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.highlight
+    - pymdownx.inlinehilite
+    - pymdownx.keys
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.snippets:
+          check_paths: true
+    - pymdownx.superfences:
+          custom_fences:
+              - name: mermaid
+                class: mermaid
+                format: !!python/name:pymdownx.superfences.fence_code_format
+    - pymdownx.tabbed
+    - pymdownx.tasklist:
+          custom_checkbox: true
+    - pymdownx.tilde
