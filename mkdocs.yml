@@ -20,6 +20,7 @@ nav:
           - Home: "linux/index.md"
     - Windows:
           - Home: "windows/index.md"
+          - WSL: "windows/wsl.md"
           - Tips: "windows/tips.md"
     - Git:
           - Home: "git/index.md"
@@ -30,6 +31,8 @@ nav:
           - Home: "etc/index.md"
           - MkDocs: "etc/mkdocs.md"
           - Material for MkDocs: "etc/material4mkdocs.md"
+          - Docker: "etc/docker.md"
+          - Kubernetes: "etc/kubernetes.md"
     - Security:
           - Glossary: "security/glossary.md"
     - Languages:
@@ -44,7 +47,7 @@ theme:
     name: material
     language: ko
     font:
-        text: Nanum Gothic
+        text: "Nanum Gothic"
         code: D2Coding
     # icon:
     #   logo: material/library
