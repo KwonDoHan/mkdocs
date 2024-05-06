@@ -16,6 +16,7 @@ nav:
           - Home: "macos/index.md"
           - Apps:
                 - Visual Studio Code: "macos/vscode.md"
+                - VIM: "macos/vim.md"
     - Linux:
           - Home: "linux/index.md"
     - Windows:

@@ -32,11 +32,11 @@
 
 ### 파일 시스템
 
-- Docker,Android,SparseCramfs,Ext2/3/4,ISO,JFFS2,Minix,RomFS,Squashfs, UBIFS,Yaffs2,WIM
+- Docker, Android, SparseCramfs, Ext2/3/4, ISO, JFFS2, Minix, RomFS, Squashfs, UBIFS, Yaffs2, WIM
 
 ### 압축 파일
 
-- 7z,Ar,Arj,bzip,2cab,cpio,gzip,lrzip,lzip,lzma,lzop,rar,rzip,tar,upx,xar,xz,z,zip,lz4,zst
+- 7z, Ar, Arj, bzip, 2cab, cpio, gzip, lrzip, lzip, lzma, lzop, rar, rzip, tar, upx, xar, xz, z, zip, lz4, zst
 
 ## SBOM 표준
 
