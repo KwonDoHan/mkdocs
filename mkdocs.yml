@@ -19,6 +19,7 @@ nav:
                 - VIM: "macos/vim.md"
     - Linux:
           - Home: "linux/index.md"
+          - Tips: "linux/tips.md"
     - Windows:
           - Home: "windows/index.md"
           - WSL: "windows/wsl.md"
@@ -28,6 +29,8 @@ nav:
           - GitHub:
                 - About: "git/github/index.md"
                 - Actions: "git/github/actions.md"
+          - BitBucket:
+                - About: "git/bitbucket/index.md"
     - ETC:
           - Home: "etc/index.md"
           - MkDocs: "etc/mkdocs.md"
@@ -42,6 +45,7 @@ nav:
     - SBOM:
           - About: "sbom/index.md"
           - Supported Languages, File Formats, etc.: "sbom/supported.md"
+          - Open Sources: "sbom/openSources.md"
 
 # Theme
 theme:

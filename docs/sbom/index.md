@@ -32,11 +32,11 @@
 
       ![CVE Binary Tool 실행](img/image.png)
 
-        1. CVE 데이터 다운로드 (from NVD, OSV, GAD, REDHAT, Curl)
-        2. 컴포넌트 목록 생성/읽기
-        3. CVE 목록 생성
-        4. 트리아지(Triage)/추가 데이터 포함시키기
-        5. 리포트 생성
+      1. CVE 데이터 다운로드 (from NVD, OSV, GAD, REDHAT, Curl)
+      2. 컴포넌트 목록 생성/읽기
+      3. CVE 목록 생성
+      4. 트리아지(Triage)/추가 데이터 포함시키기
+      5. 리포트 생성
 
 ## Data Sources
 
