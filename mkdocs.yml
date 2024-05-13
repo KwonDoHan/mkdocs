@@ -40,8 +40,10 @@ nav:
     - Security:
           - Glossary: "security/glossary.md"
     - Languages:
-          - Python: "languages/python.md"
+          - SOLID Principles: "languages/solid.md"
+          - C: "languages/c.md"
           - Go: "languages/go.md"
+          - Python: "languages/python.md"
     - SBOM:
           - About: "sbom/index.md"
           - Supported Languages, File Formats, etc.: "sbom/supported.md"
@@ -52,7 +54,7 @@ theme:
     name: material
     language: ko
     font:
-        text: "Nanum Gothic"
+        text: "NanumGothic"
         code: D2Coding
     # icon:
     #   logo: material/library

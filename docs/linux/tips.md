@@ -99,3 +99,30 @@ find . -type f -perm /111
 ```
 find . -type f -perm +0111
 ```
+
+- `.git` 디렉토리를 제외한 나머지 디렉토리의 실행 가능한 모든 파일 삭제하기
+```
+find . -not -iwholename '*.git*' -type f -executable - exec rm {} +
+```
+
+## tar, gz 압축 및 해제
+
+- tar -cvf [파일명.tar] [폴더명]
+```
+tar -cvf xyz.tar abc
+```
+
+- tar -xvf [파일명.tar]
+```
+tar -xvf xyz.tar
+```
+
+- tar -zcvf [파일명.tar.gz] [폴더명]
+```
+tar -zcvf xyz.tar.gz abc
+```
+
+- tar -zxvf [파일명.tar.gz]
+```
+tar -zxvf xyz.tar.gz
+```
