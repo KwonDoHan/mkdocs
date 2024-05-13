@@ -96,3 +96,6 @@ find . -maxdepth 1 -type f -executable -exec rm {} +
 ```
 find . -type f -perm /111
 ```
+```
+find . -type f -perm +0111
+```
