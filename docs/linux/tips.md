@@ -151,6 +151,19 @@ cd -
 - 커서 위치에서 앞(왼쪽) 내용 삭제하기 단축키 : `Ctrl + U`
 - 커서 위치에서 뒤(오른쪽) 내용 삭제하기 단축키 : `Ctrl + K`
 
+## 계정에 그룹 권한 주기
+
+```sh
+$ sudo usermod -aG <그룹명> <계정명>
+```
+
+실행 예:
+```sh
+$ sudo usermod -aG docker $USER
+$ sudo su - $USER
+```
+
 ## REFERENCE
 
 - [시간을 절약하는 리눅스 명령어 TIP 모음](https://inpa.tistory.com/entry/LINUX-%F0%9F%93%9A-%EC%8B%9C%EA%B0%84%EC%9D%84-%EC%A0%88%EC%95%BD%ED%95%98%EB%8A%94-%ED%84%B0%EB%AF%B8%EB%84%90-%EB%8B%A8%EC%B6%95%ED%82%A4-Command-Line-Tip)
+- [우분투 리늑스 - 계정 생성 및 sudo 권한 주기](https://dalgong2.tistory.com/14)
