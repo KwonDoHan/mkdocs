@@ -67,3 +67,59 @@ $ gcc -o main main.c -L./ -lmylib
 
 ### 공유(shared) 라이브러리 파일
 
+1. 라이브러로 사용할 함수 파일과 메인 프로그램 작성
+```
+// foo.h
+#ifndef foo_h__
+#define foo_h__
+
+extern void foo(void);
+
+#endif // foo_h__
+```
+```
+// foo.c
+#include <stdio.h>
+
+void foo(void)
+{
+    puts("Hello, I am a shared library");
+}
+```
+```
+// main.c
+#include <stdio.h>
+#include "foo.h"
+
+int main(void)
+{
+    puts("This is a shared library test...");
+    foo();
+    return 0;
+}
+```
+
+2. Position-independent code (PIC) 만들기
+```sh
+$ gcc -c -Wall -Werror -fpic foo.c
+```
+
+3. 오브젝트 파일로부터 공유 라이브러리 만들기
+```sh
+$ gcc -shared -o libfoo.so foo.o
+```
+
+4. 공유 라이브러리 연결하기
+```sh
+$ gcc -Wall -o c-ex02-shared main.c -L./ -lfoo
+```
+
+5. 런타임(runtime)에서 라이브러리 사용하기
+    - `LD_LIBRARY_PATH` 환경변수 사용하기
+    - `rpath` 사용하기
+    - `ldconfig` 사용하기
+
+#### 참조
+
+- [Shared libraries with GCC on Linux](https://www.cprogramming.com/tutorial/shared-libraries-linux-gcc.html)
+

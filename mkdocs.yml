@@ -10,51 +10,54 @@ edit_uri: edit/master/docs
 docs_dir: "docs"
 # site_dir: 'static'
 
-nav:
-    - Home: index.md
-    - macOS:
-          - Home: "macos/index.md"
-          - Apps:
-                - Visual Studio Code: "macos/vscode.md"
-                - VIM: "macos/vim.md"
-    - Linux:
-          - Home: "linux/index.md"
-          - Tips: "linux/tips.md"
-    - Windows:
-          - Home: "windows/index.md"
-          - WSL: "windows/wsl.md"
-          - Tips: "windows/tips.md"
-    - Git:
-          - Home: "git/index.md"
-          - GitHub:
-                - About: "git/github/index.md"
-                - Actions: "git/github/actions.md"
-          - BitBucket:
-                - About: "git/bitbucket/index.md"
-    - ETC:
-          - Home: "etc/index.md"
-          - MkDocs: "etc/mkdocs.md"
-          - Material for MkDocs: "etc/material4mkdocs.md"
-          - Docker: "etc/docker.md"
-          - Kubernetes: "etc/kubernetes.md"
-    - Security:
-          - Glossary: "security/glossary.md"
-    - Languages:
-          - SOLID Principles: "languages/solid.md"
-          - C: "languages/c.md"
-          - Go: "languages/go.md"
-          - Python: "languages/python.md"
-    - SBOM:
-          - About: "sbom/index.md"
-          - Supported Languages, File Formats, etc.: "sbom/supported.md"
-          - Open Sources: "sbom/openSources.md"
+# nav:
+#     - Home: index.md
+#     - macOS:
+#           - Home: "macos/index.md"
+#           - Apps:
+#                 - Visual Studio Code: "macos/vscode.md"
+#                 - VIM: "macos/vim.md"
+#     - Linux:
+#           - Home: "linux/index.md"
+#           - Tips: "linux/tips.md"
+#     - Windows:
+#           - Home: "windows/index.md"
+#           - WSL: "windows/wsl.md"
+#           - Tips: "windows/tips.md"
+#     - Git:
+#           - Home: "git/index.md"
+#           - GitHub:
+#                 - About: "git/github/index.md"
+#                 - Actions: "git/github/actions.md"
+#           - BitBucket:
+#                 - About: "git/bitbucket/index.md"
+#     - ETC:
+#           - Home: "etc/index.md"
+#           - MkDocs: "etc/mkdocs.md"
+#           - Material for MkDocs: "etc/material4mkdocs.md"
+#           - Docker: "etc/docker.md"
+#           - Kubernetes: "etc/kubernetes.md"
+#     - Security:
+#           - Glossary: "security/glossary.md"
+#     - Languages:
+#           - SOLID Principles: "languages/solid.md"
+#           - Open Source Licenses: "languages/licenses.md"
+#           - C: "languages/c.md"
+#           - Go: "languages/go.md"
+#           - Python: "languages/python.md"
+#     - SBOM:
+#           - About: "sbom/index.md"
+#           - Supported Languages, File Formats, etc.: "sbom/supported.md"
+#           - Open Sources (INDEX):
+#                 - About: "sbom/openSources/index.md"
+#                 - Syft: "sbom/openSources/syft.md"
 
 # Theme
 theme:
     name: material
     language: ko
     font:
-        text: "NanumGothic"
+        text: "Nanum Gothic"
         code: D2Coding
     # icon:
     #   logo: material/library
@@ -85,6 +88,13 @@ theme:
 # Plugins
 plugins:
     - search
+    - awesome-pages:
+          filename: .pages
+          # order: asc
+          # order_by: title
+          # sort_type: natural
+          collapse_single_pages: true
+          strict: true
 
 extra_css:
     - css/custom.css
@@ -107,8 +117,8 @@ markdown_extensions:
     - pymdownx.critic
     - pymdownx.details
     - pymdownx.emoji:
-          emoji_index: !!python/name:materialx.emoji.twemoji
-          emoji_generator: !!python/name:materialx.emoji.to_svg
+          emoji_index: !!python/name:material.extensions.emoji.twemoji
+          emoji_generator: !!python/name:material.extensions.emoji.to_svg
     - pymdownx.highlight
     - pymdownx.inlinehilite
     - pymdownx.keys

@@ -1,0 +1,5 @@
+title: GitHub
+
+nav:
+    - Home: index.md
+    - actions.md
