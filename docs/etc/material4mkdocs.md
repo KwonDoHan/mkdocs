@@ -42,9 +42,10 @@ theme:
 
 #### 고급 설정
 
-- 색상 변경하기
-- 글꼴 변경하기
-- 언어 변경하기
+- [색상 변경하기](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)
+- [글꼴 변경하기](https://squidfunk.github.io/mkdocs-material/setup/changing-the-fonts/)
+- [언어 변경하기](https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/)
+- [로고/아이콘 변경하기](https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/)
 
 <!-- TODO: 고급 설정 추가하기 -->
 

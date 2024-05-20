@@ -4,5 +4,5 @@ nav:
     - Home: index.md
     - MkDocs: mkdocs.md
     - Material for MkDocs: material4mkdocs.md
-    - Docker: docker.md
+    - docker
     - Kubernetes: kubernetes.md

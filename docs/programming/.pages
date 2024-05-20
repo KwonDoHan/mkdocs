@@ -4,6 +4,6 @@ nav:
     - SOLID Principles: solid.md
     - Open Source Licenses: licenses.md
     - Languages:
-        - C: c
-        - Golang: golang
-        - Python: python
+          - c
+          - golang
+          - python
