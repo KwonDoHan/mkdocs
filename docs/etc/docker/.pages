@@ -1,5 +1,6 @@
 title: Docker
 
 nav:
-    - Home: index.md
+    - index.md
     - install.md
+    - deployGoWeb.md
