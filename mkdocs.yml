@@ -10,48 +10,6 @@ edit_uri: edit/master/docs
 docs_dir: "docs"
 # site_dir: 'static'
 
-# nav:
-#     - Home: index.md
-#     - macOS:
-#           - Home: "macos/index.md"
-#           - Apps:
-#                 - Visual Studio Code: "macos/vscode.md"
-#                 - VIM: "macos/vim.md"
-#     - Linux:
-#           - Home: "linux/index.md"
-#           - Tips: "linux/tips.md"
-#     - Windows:
-#           - Home: "windows/index.md"
-#           - WSL: "windows/wsl.md"
-#           - Tips: "windows/tips.md"
-#     - Git:
-#           - Home: "git/index.md"
-#           - GitHub:
-#                 - About: "git/github/index.md"
-#                 - Actions: "git/github/actions.md"
-#           - BitBucket:
-#                 - About: "git/bitbucket/index.md"
-#     - ETC:
-#           - Home: "etc/index.md"
-#           - MkDocs: "etc/mkdocs.md"
-#           - Material for MkDocs: "etc/material4mkdocs.md"
-#           - Docker: "etc/docker.md"
-#           - Kubernetes: "etc/kubernetes.md"
-#     - Security:
-#           - Glossary: "security/glossary.md"
-#     - Languages:
-#           - SOLID Principles: "languages/solid.md"
-#           - Open Source Licenses: "languages/licenses.md"
-#           - C: "languages/c.md"
-#           - Go: "languages/go.md"
-#           - Python: "languages/python.md"
-#     - SBOM:
-#           - About: "sbom/index.md"
-#           - Supported Languages, File Formats, etc.: "sbom/supported.md"
-#           - Open Sources (INDEX):
-#                 - About: "sbom/openSources/index.md"
-#                 - Syft: "sbom/openSources/syft.md"
-
 # Theme
 theme:
     name: material

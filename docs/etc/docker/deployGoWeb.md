@@ -32,6 +32,19 @@ $ docker run -it --rm -p 8010:8010 -v $PWD/src:/go/src/mathapp mathapp-developme
 ```
 
 
+## ETC
+
+- `gin`
+    - https://github.com/gin-gonic/gin
+- `testify`
+    - https://github.com/stretchr/testify
+
+
 ## REFERENCE
 
 - [How to Deploy a Go Web Application with Docker](https://semaphoreci.com/community/tutorials/how-to-deploy-a-go-web-application-with-docker)
+- [Top 6 Best Golang Testing Frameworks in 2024](https://reliasoftware.com/blog/golang-testing-framework)
+- [Set Up a Simple Go Development Environment with Docker](https://levelup.gitconnected.com/setup-simple-go-development-environment-with-docker-b8b9c0d4e0a8)
+- [Create a Containerized Go Development Environment in Docker](https://www.brettfullam.com/create-a-containerized-go-development-environment-in-docker)
+- [Go development with Docker Containers](https://blog.jetbrains.com/go/2020/05/04/go-development-with-docker-containers/)
+- [Golang Debugging Tutorial](https://www.rookout.com/blog/golang-debugging-tutorial/)
