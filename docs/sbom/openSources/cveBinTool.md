@@ -1,1 +1,1 @@
-# cve-bin-tool
+# CVE Binary Tool ^`cve-bin-tool`^

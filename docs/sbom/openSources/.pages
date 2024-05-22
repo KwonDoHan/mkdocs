@@ -3,5 +3,5 @@ title: Open Sources
 nav:
     - home.md
     - syft.md
-    - cveBinTool.md
+    - CVE Binary Tool: cveBinTool.md
     - trivy.md
