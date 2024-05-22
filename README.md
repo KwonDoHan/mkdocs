@@ -10,7 +10,7 @@ RUN pip install mkdocs-awesome-pages-plugin
 ```
 
 ```sh
-$ docker build -t mkdocs-material .
+docker build -t mkdocs-material .
 ```
 
 ### 개발 서버 시작하기
@@ -19,19 +19,19 @@ $ docker build -t mkdocs-material .
 Mount the folder where your `mkdocs.yml` resides as a volume into `/docs`:
 
 ```sh
-$ docker run --rm --name mkdocs -it -p 8080:8000 -v ${PWD}:/docs mkdocs-material
+docker run --rm --name mkdocs -it -p 8080:8000 -v ${PWD}:/docs mkdocs-material
 ```
 
 ### 문서 빌드하기
 
 ```sh
-$ docker run --rm --name mkdocs -it -v ${PWD}:/docs mkdocs-material build
+docker run --rm --name mkdocs -it -v ${PWD}:/docs mkdocs-material build
 ```
 
 ### GitHub 페이지로 문서 배포하기
 
 ```sh
-$ docker run --rm --name mkdocs -it -v ~/.ssh:/root/.ssh -v ${PWD}:/docs mkdocs-material gh-deploy
+docker run --rm --name mkdocs -it -v ~/.ssh:/root/.ssh -v ${PWD}:/docs mkdocs-material gh-deploy
 ```
 
 
