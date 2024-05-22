@@ -1,6 +1,4 @@
-title: MS-Windows
-
 nav:
-    - Home: index.md
+    - home.md
     - wsl.md
     - tips.md

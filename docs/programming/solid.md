@@ -1,4 +1,4 @@
-# 객체지향 설계 5원칙 SOLID in Go
+# 객체지향 설계 5원칙 SOLID
 
 ## 단일 책임 원칙 <sup>single responsibility principle, SRP</sup>
 

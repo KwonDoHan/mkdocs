@@ -1,8 +1,6 @@
-title: ETC
-
 nav:
-    - Home: index.md
-    - MkDocs: mkdocs.md
-    - Material for MkDocs: material4mkdocs.md
+    - home.md
+    - mkdocs.md
+    - material4mkdocs.md
     - docker
-    - Kubernetes: kubernetes.md
+    - kubernetes.md

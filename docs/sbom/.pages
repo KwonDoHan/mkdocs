@@ -1,6 +1,6 @@
 title: SBOM Engine
 
 nav:
-    - Home: index.md
-    - Supported Languages, File Formats, etc.: supported.md
+    - home.md
+    - supported.md
     - openSources

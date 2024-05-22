@@ -1,4 +1,3 @@
-title: Security 
-
 nav:
-    - Glossary: glossary.md
+    - home.md
+    - glossary.md

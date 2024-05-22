@@ -1,8 +1,6 @@
-title: Programming
-
 nav:
-    - SOLID Principles: solid.md
-    - Open Source Licenses: licenses.md
+    - solid.md
+    - licenses.md
     - Languages:
           - c
           - golang

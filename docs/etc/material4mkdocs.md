@@ -25,7 +25,7 @@ $ docker pull squidfunk/mkdocs-material
     Windows PowerShell에서 아래와 같이 명령해서 8080 포트로 확인이 가능하다.
     
     ```sh
-    $ docker run --rm -it -p 8080:8000 -v ${PWD}:/docs mkdocs-material
+    $ docker run --rm --name mkdocs -it -p 8080:8000 -v ${PWD}:/docs mkdocs-material
     ```
 
 [^1]: `awersome-pages` 플러그인 추가한 `Dockerfile`

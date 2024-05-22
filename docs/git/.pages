@@ -1,6 +1,4 @@
-title: Git
-
 nav:
-    - Home: index.md
+    - home.md
     - github
     - bitbucket

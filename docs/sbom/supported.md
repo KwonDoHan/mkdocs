@@ -1,4 +1,4 @@
-# SBOM 엔진(스캐너) 기능
+# Supported Languages, File Formats, etc.
 
 ## 지원범위
 

@@ -1,5 +1,7 @@
-title: Open Sources (INDEX)
+title: Open Sources
 
 nav:
-    - Home: index.md
-    - Syft: syft.md
+    - home.md
+    - syft.md
+    - cveBinTool.md
+    - trivy.md

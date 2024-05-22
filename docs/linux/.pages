@@ -1,5 +1,5 @@
 title: Linux
 
 nav:
-    - Home: index.md
-    - Tips: tips.md
+    - home.md
+    - tips.md
