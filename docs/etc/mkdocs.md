@@ -17,7 +17,7 @@ Python 설치는 [홈페이지](https://www.python.org)를 통해서 할 수 있
 
 - [Anaconda Distribution 다운로드](https://www.anaconda.com/download)에서 설치하고자 하는 운영체제(OS)에 맞는 파일을 다운로드한다.
 
-![Anaconda Distribution](img/anaconda001.png)
+![Anaconda Distribution](imgs/anaconda001.png)
 
 !!! note
     특별히 신경써야 하는 부분이 없으므로 설치와 관련된 화면을 굳이 넣음으로써 불필요하게 문서량을 늘이지 않는다.
@@ -27,7 +27,7 @@ Python 설치는 [홈페이지](https://www.python.org)를 통해서 할 수 있
 - Anaconda를 설치하고 `Ananconda Prompt`를 실행하면, Windows Prompt와는 조금 다른 모양의 프롬프트 창이 실행된다.
 이것은 Python을 실행하기 위해 설정해야 하는 내용들이 적용된 프롬프트이다.
 
-![Anaconda Prompt](img/anaconda010.png)
+![Anaconda Prompt](imgs/anaconda010.png)
 
 - `Ananconda Prompt`를 실행하고 MkDocs 패키지를 설치하려면 아래와 같이 명령한다.
 
@@ -305,7 +305,7 @@ admonition은 3개 이상의 느낌표(`!!!`)로 시작하고, 이후에 타입�
 
 Syntax에 대한 문법은 아래와 같다.
 
-![Grammer of Js-Sequence](img/sequence001.png)
+![Grammer of Js-Sequence](imgs/sequence001.png)
 
 그리고 아래와 예제를 참고하자.
 
