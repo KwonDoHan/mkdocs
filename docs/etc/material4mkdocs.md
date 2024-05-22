@@ -20,13 +20,19 @@ $ docker pull squidfunk/mkdocs-material
 
 !!! note
     `pip` 명령어를 이용한 설치 후 사용하다가, `docker`를 사용하는 방법으로 변경하였다.
-    [플러그인을 추가하는 방법](https://squidfunk.github.io/mkdocs-material/getting-started/?h=docker#with-docker)을 통해서 `awesome-pages`을 추가할 수 있도록 `Dockerfile`을 만들어서 이미지를 생성하고 사용중이다.
+    [플러그인을 추가하는 방법](https://squidfunk.github.io/mkdocs-material/getting-started/?h=docker#with-docker)을 통해서 [awesome-pages](https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin) 플러그인을 추가할 수 있도록 `Dockerfile`[^1]을 만들어서 이미지를 생성하고 사용중이다.
 
     Windows PowerShell에서 아래와 같이 명령해서 8080 포트로 확인이 가능하다.
     
     ```sh
     $ docker run --rm -it -p 8080:8000 -v ${PWD}:/docs mkdocs-material
     ```
+
+[^1]: `awersome-pages` 플러그인 추가한 `Dockerfile`
+```title="Dockerfile"
+FROM squidfunk/mkdocs-material
+RUN pip install mkdocs-awesome-pages-plugin
+```
 
 ## 사이트 만들기
 
