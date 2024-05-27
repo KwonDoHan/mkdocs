@@ -1,7 +1,8 @@
 nav:
     - solid.md
     - licenses.md
+    - makefile.md
     - Languages:
           - c
-          - golang
+          - Go: golang
           - python

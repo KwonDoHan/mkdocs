@@ -268,35 +268,60 @@ admonition은 3개 이상의 느낌표(`!!!`)로 시작하고, 이후에 타입�
 [flowchart.js](http://flowchart.js.org)에서 제공하는 기능을 MkDocs에 적용한 확장이다.
 자세한 내용은 해당 홈페이지를 참고한다.
 
-!!! example
+```` markdown title="Flow chart"
+``` mermaid
+graph LR
+    A[Start] --> B{Error?};
+    B -->|Yes| C[Hmm...];
+    C --> D[Debug];
+    D --> B;
+    B ---->|No| E[Yay!];
+```
+````
 
-    ```flow tab="Output"
-    st=>start: Start:>http://www.google.com[blank]
-    e=>end:>http://www.google.com
-    op=>operation: My Operation
-    sub=>subroutine: My Subroutine
-    cond=>condition: Yes or No?:>http://www.google.com
-    io=>inputoutput: catch something...
+<div class="result" markdown>
+``` mermaid
+graph LR
+    A[Start] --> B{Error?};
+    B -->|Yes| C[Hmm...];
+    C --> D[Debug];
+    D --> B;
+    B ---->|No| E[Yay!];
+```
+</div>
 
-    st->op->cond
-    cond(yes)->io->e
-    cond(no)->sub(right)->op
-    ```
+!!! Example
 
-    ```` tab="Source"
-    ```flow
-    st=>start: Start:>http://www.google.com[blank]
-    e=>end:>http://www.google.com
-    op=>operation: My Operation
-    sub=>subroutine: My Subroutine
-    cond=>condition: Yes or No?:>http://www.google.com
-    io=>inputoutput: catch something...
-
-    st->op->cond
-    cond(yes)->io->e
-    cond(no)->sub(right)->op
-    ```
-    ````
+    === "결과"
+        <div class="result" markdown>
+        ``` mermaid
+        sequenceDiagram
+        autonumber
+        Alice->>John: Hello John, how are you?
+        loop Healthcheck
+            John->>John: Fight against hypochondria
+        end
+        Note right of John: Rational thoughts!
+        John-->>Alice: Great!
+        John->>Bob: How about you?
+        Bob-->>John: Jolly good!
+        ```
+        </div>
+    === "마크다운"
+        ```` markdown
+        ``` mermaid
+        sequenceDiagram
+        autonumber
+        Alice->>John: Hello John, how are you?
+        loop Healthcheck
+            John->>John: Fight against hypochondria
+        end
+        Note right of John: Rational thoughts!
+        John-->>Alice: Great!
+        John->>Bob: How about you?
+        Bob-->>John: Jolly good!
+        ```
+        ````
 
 #### sequence dialog
 

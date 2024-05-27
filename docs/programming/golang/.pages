@@ -1,4 +1,5 @@
-title: GoLang
-
 nav:
-    - home.md
+    - goland.md
+    - Packages:
+        - packages
+    - references.md

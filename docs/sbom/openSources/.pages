@@ -3,5 +3,6 @@ title: Open Sources
 nav:
     - home.md
     - syft.md
-    - CVE Binary Tool: cveBinTool.md
+    - CVE Binary Tool: cve-bin-tool.md
     - trivy.md
+    - tools-golang.md

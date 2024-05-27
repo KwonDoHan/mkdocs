@@ -18,9 +18,11 @@ docker build -t mkdocs-material .
 `mkdocs.yml` 파일이 있는 폴더에서 아래와 같이 docker를 실행한다.
 Mount the folder where your `mkdocs.yml` resides as a volume into `/docs`:
 
-```sh
-docker run --rm --name mkdocs -it -p 8080:8000 -v ${PWD}:/docs mkdocs-material
 ```
+docker run --rm --name my-mkdocs -it -p 8000:8000 -v ${PWD}:/docs mkdocs-material
+```
+
+위와 같이 docker를 실행하면, 8000번 포트를 통해서 문서를 확인할 수 있다. 만약, 다른 포트를 사용해야 하는 경우라면 `-p 7000:8000` 옵션을 사용함으로써 7000번 포트로 개발 서버를 사용할 수 있다.
 
 ### 문서 빌드하기
 
