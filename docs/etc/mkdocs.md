@@ -108,7 +108,7 @@ theme:
 
 ### Markdown Extensions
 
-문서를 작성하기 위해 [Markdown](Markdown.md)의 기본문법을 알아야 한다.
+문서를 작성하기 위해 [Markdown](markdown.md)의 기본문법을 알아야 한다.
 
 MkDocs의 테마(theme)로 Material은 설정에 따라서 여러 가지 다양한 형태의 Markdown 확장(extension)을 지원한다.
 
