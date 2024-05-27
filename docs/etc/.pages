@@ -1,10 +1,9 @@
 nav:
     - home.md
     - Markdown:
-      - markdown.md
-      - markdownSyntax.md
+          - markdown.md
+          - markdownSyntax.md
     - mkdocs.md
     - material4mkdocs.md
     - docker
     - kubernetes.md
-    - privateRepo.md
