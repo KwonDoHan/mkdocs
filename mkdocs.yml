@@ -19,6 +19,7 @@ theme:
         code: D2Coding
     # icon:
     #   logo: material/library
+    # favicon: imgs/favicon.ico
     features:
         - navigation.tabs
         - navigation.instant
