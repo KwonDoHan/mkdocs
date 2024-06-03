@@ -1,4 +1,10 @@
-# Securty Glossary
+# Glossary
+
+## TODO
+
+- CPE
+- RDF
+- TagValue
 
 ## A
 
