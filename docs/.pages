@@ -7,5 +7,5 @@ nav:
     - Security: security
     - Progmming: programming
     - SBOM: sbom
-    - ETC: etc
     - Docker: docker
+    - ETC: etc
