@@ -6,7 +6,7 @@ JetBrains 도구에 대한 라이선스를 얻을 수 있었다. 그래서 Golan
 
 ## Docker
 
-```go
+```go linenums="1"
 package main
 
 import (
