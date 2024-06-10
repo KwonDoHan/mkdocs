@@ -3,6 +3,6 @@ nav:
     - licenses.md
     - makefile.md
     - Languages:
-          - c
           - Go: golang
+          - cpp
           - python
