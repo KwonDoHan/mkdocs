@@ -4,7 +4,6 @@ nav:
     - Linux: linux
     - MS-Windows: windows
     - Git: git
-    - Security: security
     - Programming: programming
     - SBOM: sbom
     - Docker: docker

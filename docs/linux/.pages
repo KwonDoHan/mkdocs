@@ -2,5 +2,6 @@ title: Linux
 
 nav:
     - home.md
+    - zsh.md
     - apt.md
     - tips.md

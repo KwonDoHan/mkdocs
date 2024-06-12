@@ -28,3 +28,4 @@ wordpress:latest
 
 - [도커 컴포트 - 개념 정리 및 사용법](http://localhost:8080/etc/docker/docker-compose/)
 - [Docker Compose에서 각 서비스 컨테이너에 쓰이는 환경변수를 다루는 방법](https://seongjin.me/environment-variables-in-docker-compose/)
+- <https://docs.docker.com/compose/environment-variables/variable-interpolation/>

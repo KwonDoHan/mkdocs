@@ -2,4 +2,5 @@ nav:
     - home.md
     - wsl.md
     - make.md
+    - curl.md
     - tips.md
