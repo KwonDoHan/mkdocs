@@ -1,21 +1,13 @@
 services:
-  build:
-    image: dohan4k/mkdocs-material:1.0
-    build: 
-      context: .
-      dockerfile: Dockerfile
-
   mkdocs-material:
-    depends_on:
-      - build
-    image: dohan4k/mkdocs-material:1.0
-    container_name: mkdocs-dohan
+    image: ${DOCKER_IMAGE_LATEST}
+    container_name: mkdocs-${USER}
     volumes:
       - .:/docs
     networks:
       - mkdocs-material-net
     ports:
-      - 8080:8000
+      - ${PORT}:8000
     restart: always
 
 networks:

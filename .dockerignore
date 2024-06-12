@@ -1,4 +1,12 @@
-.git
-.DS_Store
-.github
+.idea
 .vscode
+.git
+.gitignore
+
+.dockerignore
+.env
+docker-compose.yml
+Dockerfile
+
+Makefile
+README.md
