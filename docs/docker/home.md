@@ -20,7 +20,7 @@ LXC(리눅스 컨테이너)로부터 파생된 도커 컨테이너는 가상머�
 예를 들어 우분투<sup>Ubuntu</sup> 22.04에서 센트OS<sup>CentOS</sup> 환경을 구축하는데 시간이 얼마나 걸릴까요?
 먼저 우분투 상에서 작업을 하고 있다고 가정해 보겠습니다.
 
-```sh
+```{.sh .no-copy}
 $ cat /etc/lsb-release
 DISTRIB_ID=Ubuntu
 DISTRIB_RELEASE=22.04
@@ -32,7 +32,7 @@ DISTRIB_DESCRIPTION="Ubuntu 22.04.3 LTS"
 
 [^1]: Docker 명령어를 실행하는 환경이 반드시 우분투여야 하는 것은 아닙니다. 다른 리눅스 배포판이나 맥OS<sup>macOS</sup>에서도 도커가 설치되어 있다면 아래 내용을 똑같이 실행해 볼 수 있습니다.
 
-```sh
+```{.sh .no-copy}
 $ docker run -it --rm centos:latest bash
 Unable to find image 'centos:latest' locally
 latest: Pulling from library/centos
@@ -50,7 +50,7 @@ Status: Downloaded newer image for centos:latest
 
 그럼, 지금 실행중인 셀의 환경이 정말 센트OS인지 확인해 보도록 하겠습니다.
 
-```sh
+```{.sh .no-copy}
 [root@d30e509b4692 /]# cat /etc/redhat-release
 CentOS Linux release 8.4.2105
 ```
@@ -79,7 +79,7 @@ CentOS Linux release 8.4.2105
 먼저 1의 이미지를 풀 받는 부분만 진행합니다.
 이제 막 도커를 설치했으니 이미지가 없다는 것을 확인해 봅니다.
 
-```sh
+```{.sh .no-copy}
 $ docker images
 REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
 ```
@@ -88,7 +88,7 @@ REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
 그렇다면 `centos` 이미지를 도커 레지스트리 상에서 풀 받아보겠습니다.
 도커에서는 `docker pull <IMAGE_NAME>` 명령어로 이미지를 풀 받을 수 있습니다.
 
-```sh
+```{.sh .no-copy}
 $ docker pull centos
 Using default tag: latest
 latest: Pulling from library/centos
@@ -107,7 +107,7 @@ docker.io/library/centos:latest
 
 앞서 사용해 본 `images` 명령어로 다운받은 이미지를 확인해 보겠습니다.
 
-```sh
+```{.sh .no-copy}
 $ docker images
 REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
 centos       latest    5d0da3dc9764   2 years ago   231MB
@@ -143,7 +143,7 @@ centos       latest    5d0da3dc9764   2 years ago   231MB
 여기서는 셀을 실행하기 위해서 `-it` 옵션을 붙였습니다.
 `docker run -it <이미지이름:태그> <명령어>`로 `centos` 이미지 기반의 컨테이너를 하나 실행시켜 보겠습니다.
 
-```sh
+```{.sh .no-copy}
 $ docker run -it centos:latest bash
 [root@8e3362104708 /]#
 ```
@@ -153,7 +153,7 @@ $ docker run -it centos:latest bash
 이번에 사용할 명령어는 현재 실행중인 컨테이너 목록을 출력하는 명령어 `docker ps`입니다.
 컨테이너로 실행된 셀을 그대로 놔두고 별도의 셀이나 터미널을 열고 `docker ps` 명령어를 실행해 봅니다.
 
-```sh
+```{.sh .no-copy}
 $ docker ps
 CONTAINER ID   IMAGE           COMMAND   CREATED         STATUS         PORTS     NAMES
 8e3362104708   centos:latest   "bash"    2 minutes ago   Up 2 minutes             boring_albattani
@@ -172,13 +172,13 @@ CONTAINER ID   IMAGE           COMMAND   CREATED         STATUS         PORTS   
 
 앞서 실행된 `centos`의 `bash` 셀에서 `exit` 명령어로 셀을 종료합니다.
 
-```sh
+```{.sh .no-copy}
 [root@8e3362104708 /]# exit
 ```
 
 컨테이너가 종료되었는지 `docker ps`를 통해서 살펴봅니다.
 
-```sh
+```{.sh .no-copy}
 $ docker ps
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 ```
@@ -186,7 +186,7 @@ CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 컨테이너 목록이 비어있는 것을 볼 수 있습니다.
 종료된 컨테이너까지 보기 위해서는 `-a` 옵션을 사용해야 합니다.
 
-```sh
+```{.sh .no-copy}
 $ docker ps -a
 CONTAINER ID   IMAGE           COMMAND   CREATED         STATUS                      PORTS     NAMES
 8e3362104708   centos:latest   "bash"    9 minutes ago   Exited (0) 57 seconds ago             boring_albattani
@@ -195,7 +195,7 @@ CONTAINER ID   IMAGE           COMMAND   CREATED         STATUS                 
 9분 전에 만들어진 `8e3362104708` 컨테이너가 57초 전에 종료된 것을 알 수 있습니다.
 이번엔 `restart` 명령어를 통해 이미지를 되살려 보겠습니다.
 
-```sh
+```{.sh .no-copy}
 $ docker restart 8e3362104708
 8e3362104708
 $ docker ps
@@ -207,7 +207,7 @@ CONTAINER ID   IMAGE           COMMAND   CREATED          STATUS         PORTS  
 하지만 셀과 입출력을 주고받을 수 있는 상태는 아닙니다.
 컨테이너로 실행된 프로세스와 터미널 상에서 입출력을 주고 받으려면 `attach` 명령어를 사용해야 합니다.
 
-```sh
+```{.sh .no-copy}
 $ docker attach 8e3362104708
 [root@8e3362104708 /]#
 ```
@@ -239,7 +239,7 @@ $ docker attach 8e3362104708
 
 [^2]: 바이오닉 비버(Bionic Beaver)는 우분투 18.04 LTS의 코드명입니다. 2028년 EOL<sup>End of List</sup> 예정입니다.
 
-```sh
+```{.sh .no-copy}
 $ docker pull ubuntu:bionic
 ...
 $ docker run -it ubuntu:bionic bash
@@ -249,7 +249,7 @@ root@22ea990ab247:/#
 이 컨테이너에 깃^Git^을 설치해 보겠습니다.
 먼저 이 우분투 기본 이미지에는 깃이 설치되어 있지 않다는 것을 확인해 봅니다.
 
-```sh
+```{.sh .no-copy}
 root@22ea990ab247:/# git --version
 bash: git: command not found
 ```
@@ -260,7 +260,7 @@ bash: git: command not found
 우분투에 셀이 실행된 컨테이너를 그대로 두고, 다른 셀에서 `docker diff` 명령어를 실행해 보겠습니다.
 
 
-```sh
+```{.sh .no-copy}
 $ docker ps
 CONTAINER ID   IMAGE           COMMAND   CREATED         STATUS         PORTS     NAMES
 22ea990ab247   ubuntu:bionic   "bash"    3 minutes ago   Up 3 minutes             optimistic_noether
@@ -272,7 +272,7 @@ $ docker diff 22ea990ab247
 이제 깃을 설치합니다.
 다음 명령어들을 차례대로 실행합니다.
 
-```sh
+```{.sh .no-copy}
 root@22ea990ab247:/# apt update
 ...
 root@22ea990ab247:/# apt install -y git
@@ -284,7 +284,7 @@ git version 2.17.1
 우분투의 패키지 관리자 `apt`를 사용해 버전 관리 시스템 깃^Git^ 명령어를 설치했습니다.
 다시 셀을 그대로 두고 다른 셀에서 `docker diff`를 실행해 봅니다.
 
-```sh
+```{.sh .no-copy}
 $ docker diff 22ea990ab247 | head
 C /lib
 C /lib/x86_64-linux-gnu
@@ -308,7 +308,7 @@ A /bin/lesskey
 도커에서는 이 작업을 `commit`이라고 합니다.
 
 
-```sh
+```{.sh .no-copy}
 $ docker commit 22ea990ab247 ubuntu:git
 sha256:743d8cb2c092e78f35738d62510710e21e9423ef1d7e6174f6a768e07bd96c57
 $ docker images
@@ -325,7 +325,7 @@ centos       latest    5d0da3dc9764   2 years ago      231MB
 직접 확인해 보죠.
 
 
-```sh
+```{.sh .no-copy}
 $ docker run -it ubuntu:git bash
 root@ffbcf6adab21:/# git --version
 git version 2.17.1
@@ -342,7 +342,7 @@ git version 2.17.1
 
 먼저 컨테이너를 지우고, 이미지를 삭제해 보겠습니다.
 
-```sh
+```{.sh .no-copy}
 $ docker ps -a
 CONTAINER ID   IMAGE           COMMAND   CREATED          STATUS                        PORTS     NAMES
 ffbcf6adab21   ubuntu:git      "bash"    41 seconds ago   Exited (0) 3 seconds ago                magical_hugle
@@ -381,7 +381,7 @@ Deleted: sha256:bb12abda110b9821434bb8b6ad9cf9699c59295f774005207e3a27488265aa4f
 
 먼저 `Dockerfile`을 만들기 위한 디렉토리를 만듭니다.
 
-```sh
+```{.sh .no-copy}
 $ mkdir git-from-dockerfile
 $ cd git-from-dockerfile
 ```
@@ -404,7 +404,7 @@ RUN apt-get install -y git
 
 이제 `Dockerfile`로 이미지를 빌드해 보겠습니다.
 
-```sh
+```{.sh .no-copy}
 $ docker build -t ubuntu:git-from-dockerfile .
 [+] Building 0.1s (7/7) FINISHED                                                       docker:default
  => [internal] load build definition from Dockerfile                                             0.0s
@@ -423,7 +423,7 @@ $ docker build -t ubuntu:git-from-dockerfile .
 
 이미지가 새로 잘 만들어졌는지 확인해 보겠습니다.
 
-```sh
+```{.sh .no-copy}
 $ docker images
 REPOSITORY   TAG                   IMAGE ID       CREATED         SIZE
 ubuntu       git-from-dockerfile   e62615a56cb7   3 hours ago     203MB
@@ -433,7 +433,7 @@ centos       latest                5d0da3dc9764   2 years ago     231MB
 
 이제는 새로 만든 이미지에 깃^Git^이 잘 설치되어 있는지 확인해 보겠습니다.
 
-```sh
+```{.sh .no-copy}
 $ docker run -it ubuntu:git-from-dockerfile bash
 root@7c92151a907e:/# git --version
 git version 2.17.1
