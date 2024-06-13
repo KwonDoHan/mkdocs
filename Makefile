@@ -4,16 +4,16 @@
 include .env
 
 up: ## 도커 컴포즈 업(up) W/ Hot Reload
-	docker-compose up -d
+	docker-compose -p ${USER} up -d
 
 down: ## 도커 컴포즈 다운(down)
-	docker-compose down
+	docker-compose -p ${USER} down
 
 logs: ## 도커 컴포즈 로그(log) 조회
-	docker-compose logs -f
+	docker-compose -p ${USER} logs -f
 
 ps: ## 도커 컨테이너 상태 확인
-	docker-compose ps
+	docker-compose -p ${USER} ps
 
 build: ## 도커 이미지 빌드(build)
 	docker build -t ${DOCKER_IMAGE_TAG} .
