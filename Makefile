@@ -1,4 +1,4 @@
-.PHONY: help up down build push
+.PHONY: help up down logs ps build push
 .DEFAULT_GOAL := help
 
 include .env
@@ -8,6 +8,12 @@ up: ## 도커 컴포즈 업(up) W/ Hot Reload
 
 down: ## 도커 컴포즈 다운(down)
 	docker-compose down
+
+logs: ## 도커 컴포즈 로그(log) 조회
+	docker-compose logs -f
+
+ps: ## 도커 컨테이너 상태 확인
+	docker-compose ps
 
 build: ## 도커 이미지 빌드(build)
 	docker build -t ${DOCKER_IMAGE_TAG} .

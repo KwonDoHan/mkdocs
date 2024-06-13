@@ -3,4 +3,5 @@ nav:
     - wsl.md
     - make.md
     - curl.md
+    - terminal.md
     - tips.md
