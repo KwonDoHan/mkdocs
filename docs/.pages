@@ -5,6 +5,7 @@ nav:
     - MS-Windows: windows
     - Git: git
     - Programming: programming
-    - SBOM: sbom
+    - Database: database
     - Docker: docker
     - ETC: etc
+    - SBOM: sbom
