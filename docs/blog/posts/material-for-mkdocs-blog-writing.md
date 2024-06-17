@@ -39,7 +39,7 @@ categories:
 tags:
     - Material for MkDocs
     - Blog
-slug: material-for-mkdocs-blog-writing    
+slug: material-for-mkdocs-blog-writing
 ---
 
 # Material for MkDocs 블로그^Blog^ 기능
@@ -111,6 +111,6 @@ Insider[^1] 버전을 사용하기 위해서는 비용이 발생하기 때문에
 authors:
     dohan:
         name: Dohan KWON
-        description: SS연구팀 수석연구원
+        description: PROGRAMMER
         avatar: https://github.com/dohankwon.png
 ```

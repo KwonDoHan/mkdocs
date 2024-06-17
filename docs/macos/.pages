@@ -4,4 +4,3 @@ nav:
     - Home: index.md
     - Apps:
           - vscode.md
-          - vim.md

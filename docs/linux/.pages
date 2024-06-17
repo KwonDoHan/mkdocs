@@ -3,5 +3,6 @@ title: Linux
 nav:
     - home.md
     - zsh.md
+    - vim.md
     - apt.md
     - tips.md
