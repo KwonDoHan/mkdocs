@@ -5,5 +5,4 @@ nav:
           - markdownSyntax.md
     - mkdocs.md
     - material4mkdocs.md
-
     - kubernetes.md

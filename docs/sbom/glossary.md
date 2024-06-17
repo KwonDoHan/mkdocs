@@ -22,6 +22,7 @@ CVE (Common Vulnerabilities and Exposures)
 :   컴퓨터 하드웨어 또는 소프트웨어 결함이나 체계/설계상의 취약점
 
 CWE (Common Weakness Enumeration)
+
 :   다양한 언어 (C, C++, C#, Java, Go, Python 등) 및 아키텍쳐, 디자인 설계, 코딩 등의 개발 단계에서 발생 가능한 취약점 (소스코드 보안취약점)
 
     주로 거론되는 7대 보안 취약점(CWE)은 아래와 같다.

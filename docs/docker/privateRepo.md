@@ -139,11 +139,11 @@ Now, we can change the location by docker volume feature.
 
 ```sh
 docker run -d \
-  -p 5000:5000 \
-  --restart=always \
-  --name registry \
-  -v /mnt/registry:/var/lib/registry \
-  registry:2
+    -p 5000:5000 \
+    --restart=always \
+    --name registry \
+    -v /mnt/registry:/var/lib/registry \
+    registry:2
 ```
 
 - `-v` map physical path `/mnt/registry` &rarr; container path `/var/lib/registry`
@@ -180,10 +180,10 @@ Change service inside container port by specify environment variable `REGISTRY_H
 
 ```sh
 docker run -d \
-  -e REGISTRY_HTTP_ADDR=0.0.0.0:5001 \
-  -p 5001:5001 \
-  --name registry-test \
-  registry:2
+    -e REGISTRY_HTTP_ADDR=0.0.0.0:5001 \
+    -p 5001:5001 \
+    --name registry-test \
+    registry:2
 ```
 
 Configure container with volume.
@@ -195,14 +195,14 @@ $ docker-private-registry docker volume inspect registry
 
 ```json
 [
-  {
-    "CreatedAt": "2018-05-28T00:45:06+09:00",
-    "Driver": "local",
-    "Labels": {},
-    "Mountpoint": "/var/lib/docker/volumes/registry/_data",
-    "Name": "registry",
-    "Options": {},
-    "Scope": "local"
-  }
+    {
+        "CreatedAt": "2018-05-28T00:45:06+09:00",
+        "Driver": "local",
+        "Labels": {},
+        "Mountpoint": "/var/lib/docker/volumes/registry/_data",
+        "Name": "registry",
+        "Options": {},
+        "Scope": "local"
+    }
 ]
 ```
