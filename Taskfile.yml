@@ -6,29 +6,31 @@ tasks:
     up:
         desc: 도커 컴포즈 업(UP)
         cmds:
-            - docker-compose -p ${USER} up -d
+            - docker-compose -p ${USER}_${PROJECT} up -d
     down:
         desc: 도커 컴포즈 다운(DOWN)
         cmds:
-            - docker-compose -p ${USER} down
+            - docker-compose -p ${USER}_${PROJECT} down
     logs:
-        desc: 도커 컴포즈 로그(log) 조회
+        desc: 도커 컴포즈 로그(LOG) 조회
         cmds:
-            - docker-compose -p ${USER} logs -f
+            - docker-compose -p ${USER}_${PROJECT} logs -f
     ps:
-        desc: 도커 컨테이너 상태 확인
+        desc: 도커 컨테이너 상태(STATUS) 확인
         cmds:
-            - docker-compose -p ${USER} ps
+            - docker-compose -p ${USER}_${PROJECT} ps
     build:
         desc: 도커 이미지 빌드(BUILD)
         cmds:
-            - docker build -t ${DOCKER_IMAGE_TAG}
+            - docker build -t ${DOCKER_IMAGE_TAG} .
             - docker tag ${DOCKER_IMAGE_TAG} ${DOCKER_IMAGE_LATEST}
     push:
-        desc: 도커 이미지 푸시(push)
+        desc: 도커 이미지 푸시(PUSH)
         cmds:
             - docker push ${DOCKER_IMAGE_TAG}
             - docker push ${DOCKER_IMAGE_LATEST}
-    # greet:
-    #     cmds:
-    #         - echo "Using ${DOCKER_IMAGE_TAG} and ${DOCKER_IMAGE_LATEST} ${USER}"
+    remove:
+        desc: 도커 이미지 삭제(REMOVE)
+        cmds:
+            - docker image rm -f ${DOCKER_IMAGE_TAG}
+            - docker image rm -f ${DOCKER_IMAGE_LATEST}

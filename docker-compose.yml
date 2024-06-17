@@ -1,7 +1,7 @@
 services:
     mkdocs-material:
         image: ${DOCKER_IMAGE_LATEST}
-        container_name: mkdocs-${USER}
+        container_name: ${USER}-mkdocs
         volumes:
             - .:/docs
         networks:
