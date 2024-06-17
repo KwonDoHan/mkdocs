@@ -1,8 +1,7 @@
 nav:
     - home.md
-    - Markdown:
-          - markdown.md
-          - markdownSyntax.md
-    - mkdocs.md
+    - Markdown: markdown.md
+    # - markdown-syntax.md
+    # - mkdocs.md
     - material4mkdocs.md
     - kubernetes.md

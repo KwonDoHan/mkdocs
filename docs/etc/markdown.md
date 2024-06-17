@@ -1,4 +1,4 @@
-# 마크다운이란?
+# 마크다운^Markdown^
 
 본 문서의 내용은 [GitHubGist](https://gist.github.com/ihoneymon/652be052a0727ad59601#file-gistfile1-md)에서 일부 내용을 가져와서 수정했습니다.
 

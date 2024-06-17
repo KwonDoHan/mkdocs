@@ -4,8 +4,8 @@ nav:
     - home.md
     - command.md
     - install.md
-    - deployGoWeb.md
-    - Docker 컨테이너를 이용한 개발: developWithDocker.md
-    - privateRepo.md
+    - deploy-go-web.md
+    - Docker 컨테이너를 이용한 개발: develop-with-docker.md
+    - private-repo.md
     - docker-compose.md
     - images.md
