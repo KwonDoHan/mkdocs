@@ -9,3 +9,4 @@ nav:
     - Docker: docker
     - ETC: etc
     - SBOM: sbom
+    - blog
