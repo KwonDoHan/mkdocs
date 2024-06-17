@@ -1,14 +1,14 @@
 services:
-  mkdocs-material:
-    image: ${DOCKER_IMAGE_LATEST}
-    container_name: mkdocs-${USER}
-    volumes:
-      - .:/docs
-    networks:
-      - mkdocs-material-net
-    ports:
-      - ${PORT}:8000
-    restart: always
+    mkdocs-material:
+        image: ${DOCKER_IMAGE_LATEST}
+        container_name: mkdocs-${USER}
+        volumes:
+            - .:/docs
+        networks:
+            - mkdocs-material-net
+        ports:
+            - ${PORT}:8000
+        restart: always
 
 networks:
-  mkdocs-material-net:
+    mkdocs-material-net:
