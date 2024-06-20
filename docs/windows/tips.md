@@ -40,7 +40,7 @@ Windows 탐색기를 사용하다가 현재 폴더에 명령 프롬프트를 실
 파워쉘^PowerShell^도 명령 프롬프트와 마찬가지로 Context 메뉴에 추가할 수 있는데, 이 때 등록할 명령^command^ 키는 아래와 같다.
 
 ```
-powershell.exe -noexit -command \"Set-Location -LiteralPath '%V'\"
+powershell.exe -noexit -command "Set-Location -LiteralPath '%V'"
 ```
 
 ### `.reg` 파일
