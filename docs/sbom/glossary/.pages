@@ -1,0 +1,7 @@
+order: asc
+sort_type: natural
+order_by: title
+
+nav:
+  - home.md
+  - ...

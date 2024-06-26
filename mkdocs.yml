@@ -24,7 +24,7 @@ theme:
         - navigation.indexes
         - navigation.tabs
         - navigation.instant
-        - navigation.expand
+        #   - navigation.expand
         - search.suggest
         - search.highlight
         - content.code.copy
