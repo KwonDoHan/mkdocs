@@ -20,13 +20,14 @@ cpe:2.3:part:vendor:product:version:update:edition:language:sw_edition:target_sw
 
 1. **cpe**: CPE의 고정 접두사
 2. **2.3**: CPE 명세 버전 번호 (현재 사용되는 주요 버전은 2.3)
-3. **part**: 대상 유형 - 애플리케이션(application, `a`), 운영 체제(operating system, `o`), 하드웨어(hardware, `h`)
+3. **part**: 대상 유형 
+   - 애플리케이션(application, `a`), 운영 체제(operating system, `o`), 하드웨어(hardware, `h`)
 4. **vendor**: 소프트웨어 공급자 또는 제조업체 (예: `microsoft`)
 5. **product**: 제품명 (예: `office`)
 6. **version**: 제품 버전 (예: `2016`)
 7. **update**: 업데이트 버전 또는 서비스 팩 정보 (예: `sp1`)
 8. **edition**: 제품 에디션 (예: `professional`)
-9. **language**: 소프트웨어의 언어 (예: `en`)
+9.  **language**: 소프트웨어의 언어 (예: `en`)
 10. **sw_edition**: 소프트웨어 에디션 (예: `pro`)
 11. **target_sw**: 대상 소프트웨어 플랫폼 (예: `windows`)
 12. **target_hw**: 대상 하드웨어 플랫폼 (예: `x64`)
