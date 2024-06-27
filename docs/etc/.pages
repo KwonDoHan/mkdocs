@@ -5,3 +5,4 @@ nav:
     # - mkdocs.md
     - material4mkdocs.md
     - kubernetes.md
+    - google.md
