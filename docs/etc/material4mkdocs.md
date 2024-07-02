@@ -66,12 +66,49 @@ theme:
 
 #### 고급 설정
 
-- [색상 변경하기](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)
-- [글꼴 변경하기](https://squidfunk.github.io/mkdocs-material/setup/changing-the-fonts/)
-- [언어 변경하기](https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/)
-- [로고/아이콘 변경하기](https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/)
+<div class="mdx-columns" markdown>
 
-<!-- TODO: 고급 설정 추가하기 -->
+- [색상 변경하기]
+- [글꼴 변경하기]
+- [언어 변경하기]
+- [로고/아이콘 변경하기]
+- [Ensuring data privacy]
+- [Setting up navigation]
+- [Setting up site search]
+- [Setting up site analytics]
+- [Setting up social cards]
+- [Setting up a blog]
+- [Setting up tags]
+- [Setting up versioning]
+- [Setting up the header]
+- [Setting up the footer]
+- [Adding a git repository]
+- [Adding a comment system]
+- [Building for offline usage]
+- [Building an optimized site]
+- [Markdown extensions]
+
+</div>
+
+[색상 변경하기]: https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors
+[글꼴 변경하기]: https://squidfunk.github.io/mkdocs-material/setup/changing-the-fonts
+[언어 변경하기]: https://squidfunk.github.io/mkdocs-material/setup/changing-the-language
+[로고/아이콘 변경하기]: https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons
+[Ensuring data privacy]: https://squidfunk.github.io/mkdocs-material/setup/ensuring-data-privacy
+[Setting up navigation]: https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation
+[Setting up site search]: https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search
+[Setting up site analytics]: https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics
+[Setting up social cards]: https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards
+[Setting up a blog]: https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog
+[Setting up tags]: https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags
+[Setting up versioning]: https://squidfunk.github.io/mkdocs-material/setup/setting-up-versioning
+[Setting up the header]: https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-header
+[Setting up the footer]: https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer
+[Adding a git repository]: https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository
+[Adding a comment system]: https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system
+[Building for offline usage]: https://squidfunk.github.io/mkdocs-material/setup/building-for-offline-usage
+[Building an optimized site]: https://squidfunk.github.io/mkdocs-material/setup/building-an-optimized-site
+[Markdown extensions]: https://squidfunk.github.io/mkdocs-material/setup/extensions/index
 
 
 ### 작성한 내용 확인하기
